@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Post from './Post';
 import User from './User';
+import Table from './Table';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
   return (
     <div className="App">
       <User reqType={reqType} setReqType={setReqType}/>
-      <Post items={items}/>
+      {/* <Post items={items}/> */}
+      <Table items={items}/>
     
     </div>
   );
